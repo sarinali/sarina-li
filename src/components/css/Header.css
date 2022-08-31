@@ -1,0 +1,15 @@
+.headermain {
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: start;
+    /* width: 100%; */
+}
+
+.toggledisplaymode {
+    background-color: red;
+    width: 30%;
+}
+
+.headerwrapper {
+    display: flex;
+}
