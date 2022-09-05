@@ -1,12 +1,9 @@
 import "./css/Header.css";
-import ToggleButton from "./ToggleButton";
 
 function Header() {
   return (
     <div className="headerwrapper">
-      <div className="toggledisplaymode">
-        <ToggleButton></ToggleButton>
-      </div>
+      <div className="toggledisplaymode"></div>
       <div className="headermain">
         <a href="#">Home</a>
         <a href="#">Experience</a>

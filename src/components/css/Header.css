@@ -1,21 +1,15 @@
 .headermain {
-    /* background-color: rebeccapurple; */
+    background-color: rebeccapurple;
     display: flex;
     justify-content: start;
-    width: 100%;
-    /* height: auto; */
+    /* width: 100%; */
 }
 
 .toggledisplaymode {
-    /* background-color: white; */
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    /* padding: 5px 5px 5px 5px; */
+    background-color: red;
+    width: 30%;
 }
 
 .headerwrapper {
     display: flex;
-    height: 5rem;
 }
