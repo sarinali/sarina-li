@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import './css/ToggleButton.css';
 import './Themes.js';
+import {useState} from 'react';
 
 const Button = styled.button`
     background: ${({ theme }) => theme.button_colour};
@@ -10,11 +11,11 @@ const Button = styled.button`
 `;
 
 function ToggleButton() {
-    return <Button className = "displayMode" onClick={toggleDisplay}></Button>
+    const [theme, setTheme] = useState('light');
+  const themeToggler = () => {
+    console.log("hello");
+    theme === 'light' ? setTheme('dark') : setTheme('light') }
+    return <Button className = "displayMode" onClick={themeToggler}></Button>
 }
 
 export default ToggleButton;
-
-function toggleDisplay() {
-    console.log("hello");
-}
