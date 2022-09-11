@@ -1,0 +1,32 @@
+/* @import url('./theme.js'); */
+
+.displayMode {
+    /* background-color: white;
+    box-shadow: 2px 2px 3px rgb(121, 121, 121);
+    border: none; */
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    border-radius: 0.5rem;
+    transition: background-color 0.5s;
+    /* bottom: calc(var(--button-size)*.5);
+    position: fixed;
+    right: calc(var(--button-size)*.5);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1000000;
+    background-color: var(--main-background-color);
+    border: 0.0625rem solid transparent;
+    border-color: #414249;
+    box-shadow: 3px 3px 6px 0 rgba(12,13,13,.5),-3px -3px 6px 0px rgba(87,88,92,.712); */
+}
+
+.button:hover {
+    background-color: rgb(0, 0, 0);
+    
+}
