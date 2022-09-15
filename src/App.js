@@ -3,13 +3,16 @@ import './App.css';
 import './components/Header.js'
 import Header from './components/Header.js';
 import {useState} from "react";
-import Splash from "./components/SplashScreen";
+import Splash from "./components/MainScreen";
 import {ThemeProvider} from "styled-components";
+import MainScreen from './components/MainScreen';
 
 const LightTheme = {
   pageBackground: "white",
   titleColor: "#dc658b",
-  tagLineColor: "black"
+  tagLineColor: "black",
+  textColor: "black",
+  
 };
 
 const DarkTheme = {
@@ -27,7 +30,7 @@ function App() {
   const [theme, setTheme] = useState("light")
   return (
     <ThemeProvider theme={themes[theme]}>
-      <Splash theme={theme} setTheme={setTheme} />
+      <MainScreen theme={theme} setTheme={setTheme} />
     </ThemeProvider>
   );
 }
