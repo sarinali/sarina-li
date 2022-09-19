@@ -9,16 +9,18 @@ import MainScreen from './components/MainScreen';
 
 const LightTheme = {
   pageBackground: "white",
-  titleColor: "#dc658b",
-  tagLineColor: "black",
+  titleColor: "rgb(2, 43, 35)",
+  tagLineColor: "#8f4d39",
   textColor: "black",
-  
+  shadowColor: "#8a8a8a",
 };
 
 const DarkTheme = {
   pageBackground: "#282c36",
-  titleColor: "lightpink",
-  tagLineColor: "lavender"
+  titleColor: "rgb(0, 95, 78)",
+  tagLineColor: "#d3ddab",
+  shadowColor: "#1c1c1c",
+  textColor: "white"
 }
 
 const themes = {

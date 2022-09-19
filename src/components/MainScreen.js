@@ -1,16 +1,25 @@
+
+
 import styled from "styled-components";
-import { CgSun } from "react-icons/cg";
-import { HiMoon } from "react-icons/hi";
+import { BsLightbulbOffFill } from "react-icons/bs";
+import { BsLightbulb } from "react-icons/bs";
 import Header from "./Header";
+import Background from "./assets/Background";
+import HomeDisplay from "./HomeDisplay";
 
 const Toggle = styled.button`
+    margin: 5%;
+    padding: 10px;
     cursor: pointer;
-    height: 50px;
-    width: 50px;   
+    height: 40px;
+    width: 40px;   
     border: none;
     border-radius: 10%;
+    align-items: center;
+    display: flex;
     background-color: ${props => props.theme.titleColor};
     color: ${props => props.theme.pageBackground};
+
     &:focus {
         outline: none;
     }
@@ -18,9 +27,7 @@ const Toggle = styled.button`
 `;
 
 const Page = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: block;
   height: 100vh;
   width: 100vw;
   background-color: ${props => props.theme.pageBackground};
@@ -28,22 +35,13 @@ const Page = styled.div`
 `;
 
 const Container = styled.div`
+    width: 100%;
     margin: 10px 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
 `;
 
-// const Title = styled.h1`
-//     color: ${props => props.theme.titleColor};
-//     transition: all .5s ease;
-// `;
-
-// const TagLine = styled.span`
-//     color: ${props => props.theme.tagLineColor};
-//     font-size: 18px;
-//     transition: all .5s ease;
-// `;
 
 function MainScreen(props) {
     function changeTheme() {
@@ -54,7 +52,7 @@ function MainScreen(props) {
         }
     };
 
-    const icon = props.theme === "light" ? <HiMoon size={40} /> : <CgSun size={40} />;
+    const icon = props.theme === "light" ? <BsLightbulb size={20} /> : <BsLightbulbOffFill size={20} />;
 
     return (
         <Page>
@@ -64,6 +62,7 @@ function MainScreen(props) {
                 </Toggle>
                 <Header></Header>
             </Container>
+            <HomeDisplay></HomeDisplay>
         </Page>
     );
 };

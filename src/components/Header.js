@@ -3,32 +3,38 @@ import styled from "styled-components";
 
 const HeaderContainer = styled.div`
   display: flex;
-  justify-content: start;
-  margin: 5%
+
+  width: 100%
 `;
 
 const HeaderItemContainer = styled.div`
   display: flex;
+  text-align: center;
   margin: 5%;
-  color: red;
+`;
+
+const HeaderItemText = styled.a`
+  color: ${props => props.theme.tagLineColor};
+  transition: color 0.2s ease-in-out;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: ${props => props.theme.titleColor};
+  }
 `;
 
 function Header() {
   return (
     <HeaderContainer>
-      {/* <div className="toggledisplaymode"></div> */}
         <HeaderItemContainer>
-          <a href="#">Home</a>
+          <HeaderItemText href="#">Home</HeaderItemText>
         </HeaderItemContainer>
         <HeaderItemContainer>
-          <a href="#">Experience</a>
+          <HeaderItemText href="#">Experience</HeaderItemText>
         </HeaderItemContainer>
         <HeaderItemContainer>
-        <a href="#">Portfolio</a>
+        <HeaderItemText href="#">Portfolio</HeaderItemText>
         </HeaderItemContainer>
-        <HeaderItemContainer>
-        <a href="#">Contact</a>
-        </HeaderItemContainer> 
     </HeaderContainer>
   );
 }

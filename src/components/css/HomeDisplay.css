@@ -1,0 +1,25 @@
+.home-container {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.lofi-girl-container {
+    height: inherit;
+    margin-left: 5%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-container {
+    width: 100%;
+    max-height: 200px;
+}
+
+.lofi-girl {
+    max-width:100%;
+    max-height:100%;
+}
