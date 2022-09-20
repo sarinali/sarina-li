@@ -17,6 +17,7 @@ const Name = styled.div`
 `;
 
 const IntroMessage = styled.div`
+    margin-right: 5%;
     margin-left: 5%;
     width: 100%;
     display: flex;

@@ -6,7 +6,8 @@ import { BsLightbulb } from "react-icons/bs";
 import Header from "./Header";
 import Background from "./assets/Background";
 import HomeDisplay from "./HomeDisplay";
-
+import ShortBlurb from "./ShortBlurb";
+ 
 const Toggle = styled.button`
     margin: 5%;
     padding: 10px;
@@ -63,6 +64,7 @@ function MainScreen(props) {
                 <Header></Header>
             </Container>
             <HomeDisplay></HomeDisplay>
+            <ShortBlurb></ShortBlurb>
         </Page>
     );
 };

@@ -13,6 +13,7 @@ const LightTheme = {
   tagLineColor: "#8f4d39",
   textColor: "black",
   shadowColor: "#8a8a8a",
+  cardColor: "#fff4d9",
 };
 
 const DarkTheme = {
@@ -20,7 +21,8 @@ const DarkTheme = {
   titleColor: "rgb(0, 95, 78)",
   tagLineColor: "#d3ddab",
   shadowColor: "#1c1c1c",
-  textColor: "white"
+  textColor: "white",
+  cardColor: "#3e4454"
 }
 
 const themes = {
