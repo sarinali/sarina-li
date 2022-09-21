@@ -13,7 +13,7 @@ const Name = styled.div`
     // -webkit-text-fill-color: transparent;
     color: ${props => props.theme.tagLineColor};
     -webkit-text-stroke-color: ${props => props.theme.tagLineColor};
-    text-shadow: 15px 15px 10px ${props => props.theme.shadowColor};
+    text-shadow: -5px -5px 10px #f0edeb, 5px 5px 10px ${props => props.theme.shadowColor};
 `;
 
 const IntroMessage = styled.div`

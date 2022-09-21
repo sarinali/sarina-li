@@ -9,10 +9,11 @@ import ParticlesComponent from './components/Particles';
 const LightTheme = {
   pageBackground: "white",
   titleColor: "rgb(2, 43, 35)",
-  tagLineColor: "#8f4d39",
+  tagLineColor: "#a68069",
   textColor: "black",
-  shadowColor: "#8a8a8a",
-  cardColor: "#fff4d9",
+  shadowColor: "#684736",
+  // cardColor: "#fff4d9",
+  cardColor: "#eadecf",
 };
 
 const DarkTheme = {
@@ -30,7 +31,7 @@ const themes = {
 }
 
 function App() {
-  const [theme, setTheme] = useState("dark")
+  const [theme, setTheme] = useState("light")
 
   
   return (

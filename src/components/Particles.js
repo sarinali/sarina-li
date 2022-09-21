@@ -13,7 +13,7 @@ const ParticlesComponent = (props) => {
     return {
     background: {
         // color: "#111", // this sets a background color for the canvas
-        image: "url('https://static.vecteezy.com/system/resources/previews/007/162/559/original/incredible-mountain-landscape-lake-with-blue-water-night-sky-with-moon-and-stars-reflection-in-water-view-illustration-free-vector.jpg')",
+        image: "url('https://img.freepik.com/free-photo/beige-abstract-wallpaper-background-image_53876-102527.jpg?w=2000')",
         // image: "url('lofibg.jpg')"
       },
       fullScreen: {
@@ -35,6 +35,10 @@ const ParticlesComponent = (props) => {
         },
       },
       particles: {
+        color: {
+          // value: ["#d5b27e", "#bf3a2d", "#843b2c", "#045c4c", "#8d9874", "#194d54"]
+          value: "#a68069",
+        },
         move: {
           enable: true, // enabling this will make particles move in the canvas
           speed: { min: 1, max: 5 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
@@ -43,7 +47,7 @@ const ParticlesComponent = (props) => {
           value: { min: 0.3, max: 0.7 }, // using a different opacity, to have some semitransparent effects
         },
         size: {
-          value: { min: 0.5, max: 2 }, // let's randomize the particles size a bit
+          value: { min: 1, max: 5 }, // let's randomize the particles size a bit
         },
       },
     };

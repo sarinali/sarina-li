@@ -39,3 +39,31 @@
     justify-content: center;
     
 }
+
+.plant-container {
+    border-radius: 20px;
+    height: 100px;
+    width: 50px;
+    background-color: "#eadecf";
+}
+
+.plant{
+    max-height: 150px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.text-plant-container {
+    display: flex;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .text-plant-container {
+      display: block;
+    }
+    .plant {
+        margin-top: 20px;
+    }
+}
