@@ -7,7 +7,7 @@ const TextParagraph = styled.div`
     margin: 20px;
     background-color: ${props => props.theme.cardColor};
     color: ${props => props.theme.textColor};
-    box-shadow: 15px 15px 10px ${props => props.theme.shadowColor};
+    
 `;
 
 function ShortBlurb() {

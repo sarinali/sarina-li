@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import './components/Header.js'
-import Header from './components/Header.js';
 import {useState} from "react";
-import Splash from "./components/MainScreen";
 import {ThemeProvider} from "styled-components";
 import MainScreen from './components/MainScreen';
+import Particles from 'react-tsparticles';
+import ParticlesComponent from './components/Particles';
 
 const LightTheme = {
   pageBackground: "white",
@@ -22,7 +21,7 @@ const DarkTheme = {
   tagLineColor: "#d3ddab",
   shadowColor: "#1c1c1c",
   textColor: "white",
-  cardColor: "#3e4454"
+  cardColor: "#171c46"
 }
 
 const themes = {
@@ -31,11 +30,19 @@ const themes = {
 }
 
 function App() {
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("dark")
+
+  
   return (
-    <ThemeProvider theme={themes[theme]}>
-      <MainScreen theme={theme} setTheme={setTheme} />
-    </ThemeProvider>
+    <div className='App'>
+      <ThemeProvider theme={themes[theme]}>
+        <ParticlesComponent/>
+
+          <MainScreen theme={theme} setTheme={setTheme} />
+      </ThemeProvider>
+
+    </div>
+    
   );
 }
 

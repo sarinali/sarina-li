@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { BsLightbulbOffFill } from "react-icons/bs";
 import { BsLightbulb } from "react-icons/bs";
 import Header from "./Header";
-import Background from "./assets/Background";
 import HomeDisplay from "./HomeDisplay";
 import ShortBlurb from "./ShortBlurb";
  
@@ -56,16 +55,19 @@ function MainScreen(props) {
     const icon = props.theme === "light" ? <BsLightbulb size={20} /> : <BsLightbulbOffFill size={20} />;
 
     return (
-        <Page>
+        // <Page>
+        <div>
             <Container>
-                <Toggle onClick={changeTheme}>
+                {/* <Toggle onClick={changeTheme}> */}
+                {/* <Toggle>
                     {icon}
-                </Toggle>
+                </Toggle> */}
                 <Header></Header>
             </Container>
             <HomeDisplay></HomeDisplay>
             <ShortBlurb></ShortBlurb>
-        </Page>
+        {/* </Page> */}
+        </div>
     );
 };
 
