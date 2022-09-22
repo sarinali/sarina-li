@@ -6,8 +6,9 @@ const Name = styled.div`
     margin-left: 5%;
     display: flex;
     width: 100%;
-    align-items: start;
-    justify-content:start;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
     font-weight: bold;
     font-size: calc(4vw + 4vh + 2vmin);
     // -webkit-text-fill-color: transparent;
@@ -21,7 +22,9 @@ const IntroMessage = styled.div`
     margin-left: 5%;
     width: 100%;
     display: flex;
-    justify-content: start;
+    text-align: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     // margin-left: 5%;
     font-size: calc(2vw + 2vh + 1vmin);;
     font-weight: bold;
@@ -39,7 +42,7 @@ function HomeDisplay() {
             </div>
             <div className= "name-container">
                 <IntroMessage>hi new friend. i'm</IntroMessage>
-                <Name>sarina li</Name>
+                <Name>sarina li (李晶）</Name>
             </div>
         </div>
     );

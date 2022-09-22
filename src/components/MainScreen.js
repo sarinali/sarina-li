@@ -6,6 +6,8 @@ import { BsLightbulb } from "react-icons/bs";
 import Header from "./Header";
 import HomeDisplay from "./HomeDisplay";
 import ShortBlurb from "./ShortBlurb";
+import DownArrow from "./DownArrow";
+import ProjectCard from "./ProjectCard";
  
 const Toggle = styled.button`
     margin: 5%;
@@ -58,15 +60,12 @@ function MainScreen(props) {
         // <Page>
         <div>
             <Container>
-                {/* <Toggle onClick={changeTheme}> */}
-                {/* <Toggle>
-                    {icon}
-                </Toggle> */}
                 <Header></Header>
             </Container>
             <HomeDisplay></HomeDisplay>
             <ShortBlurb></ShortBlurb>
-        {/* </Page> */}
+            <DownArrow></DownArrow>
+            <ProjectCard></ProjectCard>
         </div>
     );
 };
