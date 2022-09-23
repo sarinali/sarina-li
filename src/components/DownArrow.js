@@ -4,7 +4,7 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 function DownArrow() {
     return (
         <div className="arrow-container">
-            <div className="down-arrow"><AiOutlineArrowDown></AiOutlineArrowDown></div>
+            <div className="down-arrow"><AiOutlineArrowDown size = {30}></AiOutlineArrowDown></div>
         </div>
         
     );

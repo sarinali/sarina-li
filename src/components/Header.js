@@ -27,13 +27,13 @@ function Header() {
   return (
     <HeaderContainer>
         <HeaderItemContainer>
-          <HeaderItemText href="#">Home</HeaderItemText>
+          <HeaderItemText href="#">LinkedIn</HeaderItemText>
         </HeaderItemContainer>
         <HeaderItemContainer>
-          <HeaderItemText href="#">Experience</HeaderItemText>
+          <HeaderItemText href="#">Instagram</HeaderItemText>
         </HeaderItemContainer>
         <HeaderItemContainer>
-        <HeaderItemText href="#">Portfolio</HeaderItemText>
+        <HeaderItemText href="#">Resume</HeaderItemText>
         </HeaderItemContainer>
     </HeaderContainer>
   );
