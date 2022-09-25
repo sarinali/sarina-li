@@ -3,9 +3,13 @@ import "./css/HomeDisplay.css";
 import {GrAppleAppStore} from "react-icons/gr";
 import {RiGooglePlayFill} from "react-icons/ri";
 import {FiLink2} from "react-icons/fi";
+import { useState, useEffect } from 'react';
+import useWindowDimensions from './WindowSize.js';
+
 
 
 function ProjectCard(props) {
+    const { height, width } = useWindowDimensions();
     const technologiesList = props.technologies.split(" ");
     return (
         <div className="project-card-container">
@@ -16,17 +20,17 @@ function ProjectCard(props) {
                 <div className="button-row">
                     {props.iOS !== "/" &&
                         <a href={props.iOS} className="external-link">
-                            <GrAppleAppStore size={30}></GrAppleAppStore>
+                            <GrAppleAppStore size={width*0.0}></GrAppleAppStore>
                         </a>
                     }
                     {props.android !== "/" && 
                         <a href={props.android} className="external-link">
-                            <RiGooglePlayFill size={30}></RiGooglePlayFill>
+                            <RiGooglePlayFill size= {width*0.0}></RiGooglePlayFill>
                         </a>
                     }
                     {props.web !== "/" &&
                         <a href={props.web} className = "external-link">
-                            <FiLink2 size = {30}></FiLink2>
+                            <FiLink2 size = {width*0.0}></FiLink2>
                         </a>
                     } 
                 </div>

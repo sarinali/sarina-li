@@ -14,33 +14,6 @@ import KiwiiMenu from "./assets/kiwimenu.png";
 import "./css/HomeDisplay.css";
 
 
-const Toggle = styled.button`
-  margin: 5%;
-  padding: 10px;
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
-  border: none;
-  border-radius: 10%;
-  align-items: center;
-  display: flex;
-  background-color: ${(props) => props.theme.titleColor};
-  color: ${(props) => props.theme.pageBackground};
-
-  &:focus {
-    outline: none;
-  }
-  transition: all 0.5s ease;
-`;
-
-const Page = styled.div`
-  display: block;
-  height: 100vh;
-  width: 100vw;
-  background-color: ${(props) => props.theme.pageBackground};
-  transition: all 0.5s ease;
-`;
-
 const Container = styled.div`
   width: 100%;
   margin: 10px 10px;
@@ -50,21 +23,6 @@ const Container = styled.div`
 `;
 
 function MainScreen(props) {
-  function changeTheme() {
-    if (props.theme === "light") {
-      props.setTheme("dark");
-    } else {
-      props.setTheme("light");
-    }
-  }
-
-  const icon =
-    props.theme === "light" ? (
-      <BsLightbulb size={20} />
-    ) : (
-      <BsLightbulbOffFill size={20} />
-    );
-
   return (
     // <Page>
     <div>
