@@ -35,7 +35,7 @@ function MainScreen(props) {
       <ProjectCard
         imgsrc={MarkhamTrails}
         projectName="Markham Trails"
-        tagLine="Cross Platform Mobile App"
+        tagLine="Cross Platform Mobile App - Coming Soon"
         iOS = "#"
         android = "#"
         web = "/"
