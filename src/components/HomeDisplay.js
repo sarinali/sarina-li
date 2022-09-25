@@ -26,7 +26,7 @@ const IntroMessage = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     // margin-left: 5%;
-    font-size: calc(2vw + 2vh + 1vmin);;
+    font-size: calc(2vw + 2vh + 1vmin);
     font-weight: bold;
     color: ${props => props.theme.textColor};
 `;

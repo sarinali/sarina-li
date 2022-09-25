@@ -3,7 +3,6 @@ import './components/Header.js'
 import {useState} from "react";
 import {ThemeProvider} from "styled-components";
 import MainScreen from './components/MainScreen';
-import Particles from 'react-tsparticles';
 import ParticlesComponent from './components/Particles';
 
 const LightTheme = {
@@ -40,6 +39,9 @@ function App() {
         <ParticlesComponent/>
 
           <MainScreen theme={theme} setTheme={setTheme} />
+          <div className="footer">
+            <div className='footer-content'>u reached the end. (ಥ﹏ಥ)<br></br>Sarina 2022</div>
+          </div>
       </ThemeProvider>
 
     </div>

@@ -27,13 +27,13 @@ function Header() {
   return (
     <HeaderContainer>
         <HeaderItemContainer>
-          <HeaderItemText href="#">LinkedIn</HeaderItemText>
+          <HeaderItemText href="https://www.linkedin.com/in/sarinali/">LinkedIn</HeaderItemText>
         </HeaderItemContainer>
         <HeaderItemContainer>
-          <HeaderItemText href="#">Instagram</HeaderItemText>
+          <HeaderItemText href="https://www.instagram.com/sarina.li_/">Instagram</HeaderItemText>
         </HeaderItemContainer>
         <HeaderItemContainer>
-        <HeaderItemText href="#">Resume</HeaderItemText>
+        <HeaderItemText href="https://docs.google.com/document/d/1xcm1_6RKUIltCYXJj37xoyrBq-EhCZ1ssYryM6e2us8/edit?usp=sharing">Resume</HeaderItemText>
         </HeaderItemContainer>
     </HeaderContainer>
   );
