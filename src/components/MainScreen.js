@@ -48,7 +48,7 @@ function MainScreen(props) {
         tagLine="Virtual Menu Services Startup"
         iOS = "/"
         android = "/"
-        web = "daonsushi.ca"
+        web = "https://daonsushi.ca/#/"
         description = "Kiwii Menu is a small startup aiming to create virtual menus for restuarants in Markham."
         technologies = "Flutter Dart Firebase"
       ></ProjectCard>
